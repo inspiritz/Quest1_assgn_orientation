@@ -1,5 +1,7 @@
 package com.example.ast;
 
+import com.example.eval.Visitor;
+
 import java.util.List;
 public class ListNode implements Node {
     private final String operator;

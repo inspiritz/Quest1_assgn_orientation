@@ -1,5 +1,7 @@
 package com.example.ast;
 
+import com.example.eval.Visitor;
+
 public class SymbolNode implements Node {
     private final String symbol;
 

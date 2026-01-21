@@ -1,4 +1,8 @@
-package com.example.ast;
+package com.example.eval;
+
+import com.example.ast.ListNode;
+import com.example.ast.NumberNode;
+import com.example.ast.SymbolNode;
 
 public interface Visitor<T> {
     T visitNumber(NumberNode node);

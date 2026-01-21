@@ -1,5 +1,7 @@
 package com.example.ast;
 
+import com.example.eval.Visitor;
+
 public class NumberNode implements Node {
     private final int value;
 

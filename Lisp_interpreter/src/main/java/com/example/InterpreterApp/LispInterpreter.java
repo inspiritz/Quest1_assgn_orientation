@@ -25,7 +25,8 @@ public class LispInterpreter {
                 Lexer lexer = new Lexer(input);
                 List<Token> tokens = lexer.tokenize();
 
-                Parser parser = new Parser(tokens);
+                NodeFactory factory = new NodeFactory();
+                Parser parser = new Parser(tokens, factory);
                 Node ast = parser.parseExpression();
 
                 EvaluationVisitor evaluator = new EvaluationVisitor();
